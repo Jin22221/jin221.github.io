@@ -26,7 +26,7 @@ h1 {
   font-size: 40px;
   margin: 10px 0;
 }
-h2{
+h2 {
     text-transform: capitalize;
     /* 只需要改一次 */
     color: var(--primary);

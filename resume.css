@@ -57,8 +57,6 @@ body {
   margin: 10px 0;
 }
 .header-right {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin: 30px 30px 0px 0;
   border-top: 5px solid var(--secondary);
@@ -66,7 +64,7 @@ body {
 }
 .job-title {
   text-align: end;
-  margin-right: 10px;
+  margin: 0 40px;
   font-size:x-large;
   font-weight: bold;
 }
@@ -74,7 +72,7 @@ body {
   padding: 15px 10px;
 }
 .contact svg, .contact img, .contact .material-icons {
-  transform: translateY(6px);
+  transform: translateY(5px);
 }
 .contact .material-icons {
   color: var(--white);
@@ -169,4 +167,134 @@ footer {
     text-align: right;
     color: var(--white);
     padding-right: 30px;
+}
+/* ====== RWD ======= */
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 1rem;
+  }
+  .title-img-box {
+    max-width: 200px;
+    max-height: 225px;
+  }
+  .my-name {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .header-left {
+    margin: 30px 30px 0 30px;
+    border: 5px solid var(--secondary);
+    border-bottom: 0;
+  }
+  .title-name-box h4 {
+    margin: 0;
+  }
+  .header-right {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 30px 0px 30px;
+    border: 5px solid var(--secondary);
+    border-bottom: 0;
+    border-top: 0;
+  }
+  .job-title {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+  }
+  h2::before {
+    bottom: 5px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-left {
+    width: auto;
+    margin: 0px 30px;
+    border: 5px solid var(--primary);
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .content-right {
+    width: auto;
+    margin: 0px 30px 30px 30px;
+    border: 5px solid var(--primary);
+    border-top: 0;
+  }
+  .content-item1 h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 644px) {
+  .title-img-box {
+    max-width: 180px;
+    max-height: 200px;
+  }
+  .contact {
+    line-height: 150%;
+    text-align: center;
+  }
+  .contact .material-icons {
+    margin-bottom: 6px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .header-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    text-align: start;
+  }
+}
+@media screen and (max-width: 415px) {
+  body {
+    padding: 0;
+  }
+  .header-left {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 24px 24px 0 24px;
+  }
+  .header-right {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 24px;
+    border: 5px solid var(--secondary);
+    border-bottom: 0;
+    border-top: 0;
+  }
+  .job-title {
+    position: absolute;
+    top: 30px;
+    right: auto;
+  }
+  .title-img-box {
+    margin: 0 20px;
+  }
+  .title-name-box {
+    margin: 0;
+    padding: 40px 0 0 0;
+  }
+  .my-name {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .contact {
+    padding: 15px 0px 15px 20px;
+  }
+  .content-left {
+    margin: 0 24px;
+  }
+  .content-right {
+    margin: 0 24px 24px 24px;
+  }
 }

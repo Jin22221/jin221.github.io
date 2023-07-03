@@ -280,5 +280,7 @@ footer {
   }
   footer {
     font-size: 12px;
+    text-align: center;
+    padding-right: 0;
   }
 }
